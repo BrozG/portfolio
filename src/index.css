@@ -93,6 +93,9 @@
 
   body {
     @apply bg-background text-foreground font-light;
+    background: linear-gradient(180deg, #000000 0%, #0f172a 100%);
+    background-attachment: fixed;
+    transition: background 0.3s ease;
   }
 
   html {
@@ -101,6 +104,79 @@
 }
 
 @layer utilities {
+  .bg-dynamic {
+    background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(15, 23, 42, 0.95) 50%,
+      rgba(30, 41, 59, 0.9) 100%
+    );
+    background-attachment: fixed;
+  }
+
+  .bg-hero {
+    background-image: 
+      linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)),
+      url('https://images.unsplash.com/photo-1470813740244-df37b8c1edcb?w=1920&h=1080&fit=crop');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    animation: backgroundShift 20s ease-in-out infinite;
+  }
+
+  .bg-about {
+    background-image: 
+      linear-gradient(rgba(15, 23, 42, 0.8), rgba(30, 41, 59, 0.8)),
+      url('https://images.unsplash.com/photo-1523712999610-f77fbcfc3843?w=1920&h=1080&fit=crop');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    animation: backgroundFloat 25s ease-in-out infinite;
+  }
+
+  .bg-projects {
+    background-image: 
+      linear-gradient(rgba(30, 41, 59, 0.85), rgba(51, 65, 85, 0.85)),
+      url('https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=1920&h=1080&fit=crop');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    animation: backgroundPulse 30s ease-in-out infinite;
+  }
+
+  .bg-contact {
+    background-image: 
+      linear-gradient(rgba(51, 65, 85, 0.9), rgba(71, 85, 105, 0.9)),
+      url('https://images.unsplash.com/photo-1500375592092-40eb2168fd21?w=1920&h=1080&fit=crop');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    animation: backgroundWave 35s ease-in-out infinite;
+  }
+
+  .elegant-border {
+    border: 1px solid transparent;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05)) padding-box,
+                linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05)) border-box;
+    border-radius: 1rem;
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+  }
+
+  .elegant-border:hover {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.08)) padding-box,
+                linear-gradient(135deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.1)) border-box;
+    transform: translateY(-2px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  }
+
+  .glass-effect {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 1rem;
+  }
+
   .animate-fade-in {
     animation: fadeIn 1s ease-out;
   }
@@ -166,6 +242,47 @@
 
   .hover-glow:hover {
     box-shadow: 0 0 30px rgba(255, 255, 255, 0.1);
+  }
+
+  @keyframes backgroundShift {
+    0%, 100% {
+      background-position: 0% 0%;
+    }
+    50% {
+      background-position: 100% 100%;
+    }
+  }
+
+  @keyframes backgroundFloat {
+    0%, 100% {
+      background-position: 0% 0%;
+      transform: scale(1);
+    }
+    50% {
+      background-position: 50% 50%;
+      transform: scale(1.05);
+    }
+  }
+
+  @keyframes backgroundPulse {
+    0%, 100% {
+      background-size: 100% 100%;
+    }
+    50% {
+      background-size: 110% 110%;
+    }
+  }
+
+  @keyframes backgroundWave {
+    0%, 100% {
+      background-position: 0% 0%;
+    }
+    33% {
+      background-position: 100% 0%;
+    }
+    66% {
+      background-position: 100% 100%;
+    }
   }
 
   @keyframes fadeIn {

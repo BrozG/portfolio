@@ -32,7 +32,7 @@ const Projects = () => {
   return (
     <section id="projects" className="py-24 px-6">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-4xl md:text-5xl font-light text-white text-center mb-16">
+        <h2 className="text-4xl md:text-5xl font-light text-white text-center mb-16 animate-fade-in-up">
           Featured Projects
         </h2>
         
@@ -40,25 +40,30 @@ const Projects = () => {
           {projects.map((project, index) => (
             <div
               key={index}
-              className="bg-gray-900 rounded-2xl overflow-hidden border border-gray-800 hover:border-gray-600 transition-all duration-300 group"
+              className="bg-gray-900 rounded-2xl overflow-hidden border border-gray-800 hover:border-gray-600 transition-all duration-500 group hover-lift"
+              style={{
+                animationDelay: `${index * 0.2}s`,
+                animation: 'fadeInUp 0.8s ease-out both'
+              }}
             >
               <div className="relative overflow-hidden">
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                  className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500"
                 />
+                <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
               </div>
               
               <div className="p-6">
-                <h3 className="text-lg font-medium text-white mb-3">{project.title}</h3>
+                <h3 className="text-lg font-medium text-white mb-3 group-hover:text-gray-200 transition-colors duration-300">{project.title}</h3>
                 <p className="text-gray-400 mb-4 line-clamp-3 text-sm font-light leading-relaxed">{project.description}</p>
                 
                 <div className="flex flex-wrap gap-2 mb-4">
                   {project.tech.map((tech) => (
                     <span
                       key={tech}
-                      className="text-xs bg-gray-800 text-gray-300 px-2 py-1 rounded border border-gray-700"
+                      className="text-xs bg-gray-800 text-gray-300 px-2 py-1 rounded border border-gray-700 hover:border-gray-500 hover:text-white transition-all duration-300"
                     >
                       {tech}
                     </span>
@@ -70,18 +75,18 @@ const Projects = () => {
                     href={project.github}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-2 text-gray-400 hover:text-white transition-colors text-sm"
+                    className="flex items-center gap-2 text-gray-400 hover:text-white transition-all duration-300 text-sm group/link"
                   >
-                    <Github size={16} />
+                    <Github size={16} className="group-hover/link:rotate-12 transition-transform duration-300" />
                     Code
                   </a>
                   <a
                     href={project.demo}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-2 text-gray-400 hover:text-white transition-colors text-sm"
+                    className="flex items-center gap-2 text-gray-400 hover:text-white transition-all duration-300 text-sm group/link"
                   >
-                    <ExternalLink size={16} />
+                    <ExternalLink size={16} className="group-hover/link:rotate-12 transition-transform duration-300" />
                     Demo
                   </a>
                 </div>

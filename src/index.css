@@ -105,6 +105,38 @@
     animation: fadeIn 1s ease-out;
   }
 
+  .animate-fade-in-up {
+    animation: fadeInUp 0.8s ease-out;
+  }
+
+  .animate-fade-in-delay-1 {
+    animation: fadeInUp 0.8s ease-out 0.2s both;
+  }
+
+  .animate-fade-in-delay-2 {
+    animation: fadeInUp 0.8s ease-out 0.4s both;
+  }
+
+  .animate-fade-in-delay-3 {
+    animation: fadeInUp 0.8s ease-out 0.6s both;
+  }
+
+  .animate-scale-in {
+    animation: scaleIn 0.6s ease-out;
+  }
+
+  .animate-slide-in-left {
+    animation: slideInLeft 0.8s ease-out;
+  }
+
+  .animate-slide-in-right {
+    animation: slideInRight 0.8s ease-out;
+  }
+
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
+  }
+
   .line-clamp-2 {
     display: -webkit-box;
     -webkit-line-clamp: 2;
@@ -119,6 +151,23 @@
     overflow: hidden;
   }
 
+  .hover-lift {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .hover-lift:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  }
+
+  .hover-glow {
+    transition: box-shadow 0.3s ease;
+  }
+
+  .hover-glow:hover {
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.1);
+  }
+
   @keyframes fadeIn {
     from {
       opacity: 0;
@@ -127,6 +176,59 @@
     to {
       opacity: 1;
       transform: translateY(0);
+    }
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes scaleIn {
+    from {
+      opacity: 0;
+      transform: scale(0.8);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  @keyframes slideInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes slideInRight {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-10px);
     }
   }
 }

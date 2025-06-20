@@ -24,11 +24,11 @@ const Navigation = () => {
 
   return (
     <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-      scrolled ? "bg-slate-900/90 backdrop-blur-md shadow-lg" : "bg-transparent"
+      scrolled ? "bg-black/80 backdrop-blur-xl border-b border-gray-800" : "bg-transparent"
     }`}>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center py-4">
-          <div className="text-2xl font-bold text-white">
+      <div className="max-w-6xl mx-auto px-6 lg:px-8">
+        <div className="flex justify-between items-center py-6">
+          <div className="text-xl font-medium text-white">
             Portfolio
           </div>
           
@@ -38,7 +38,7 @@ const Navigation = () => {
               <a
                 key={item.name}
                 href={item.href}
-                className="text-gray-300 hover:text-white transition-colors duration-200 hover:scale-105"
+                className="text-gray-400 hover:text-white transition-colors duration-200 text-sm font-medium"
               >
                 {item.name}
               </a>
@@ -50,19 +50,19 @@ const Navigation = () => {
             onClick={() => setIsOpen(!isOpen)}
             className="md:hidden text-white"
           >
-            {isOpen ? <X size={24} /> : <Menu size={24} />}
+            {isOpen ? <X size={20} /> : <Menu size={20} />}
           </button>
         </div>
 
         {/* Mobile Menu */}
         {isOpen && (
-          <div className="md:hidden bg-slate-800/95 backdrop-blur-md rounded-lg mb-4 animate-fade-in">
-            <div className="px-4 py-2 space-y-2">
+          <div className="md:hidden bg-black/95 backdrop-blur-xl border border-gray-800 rounded-lg mb-4 animate-fade-in">
+            <div className="px-6 py-4 space-y-3">
               {navItems.map((item) => (
                 <a
                   key={item.name}
                   href={item.href}
-                  className="block text-gray-300 hover:text-white py-2 transition-colors"
+                  className="block text-gray-400 hover:text-white py-2 transition-colors text-sm font-medium"
                   onClick={() => setIsOpen(false)}
                 >
                   {item.name}

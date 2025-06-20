@@ -66,13 +66,13 @@ const GitHubRepos = () => {
   };
 
   return (
-    <section id="github" className="py-20 px-6">
-      <div className="container mx-auto max-w-7xl">
+    <section id="github" className="py-24 px-6">
+      <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+          <h2 className="text-4xl md:text-5xl font-light text-white mb-6">
             GitHub Repositories
           </h2>
-          <p className="text-xl text-gray-300 max-w-2xl mx-auto">
+          <p className="text-lg text-gray-400 max-w-2xl mx-auto font-light">
             Explore my open-source contributions and personal projects on GitHub
           </p>
         </div>
@@ -84,32 +84,32 @@ const GitHubRepos = () => {
               href={repo.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="block bg-slate-800/50 backdrop-blur-sm rounded-xl p-6 border border-gray-700 hover:border-purple-500/50 transition-all duration-300 hover:scale-105 group"
+              className="block bg-gray-900 rounded-xl p-6 border border-gray-800 hover:border-gray-600 transition-all duration-300 group"
             >
               <div className="flex items-center gap-3 mb-4">
-                <Github className="text-gray-400 group-hover:text-purple-400 transition-colors" size={24} />
-                <h3 className="text-lg font-semibold text-white group-hover:text-purple-300 transition-colors">
+                <Github className="text-gray-400 group-hover:text-white transition-colors" size={20} />
+                <h3 className="text-lg font-medium text-white group-hover:text-gray-200 transition-colors">
                   {repo.name}
                 </h3>
               </div>
               
-              <p className="text-gray-300 text-sm mb-4 line-clamp-2">
+              <p className="text-gray-400 text-sm mb-4 line-clamp-2 font-light leading-relaxed">
                 {repo.description}
               </p>
               
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-2">
-                  <span className={`w-3 h-3 rounded-full ${getLanguageColor(repo.language)}`}></span>
-                  <span className="text-sm text-gray-400">{repo.language}</span>
+                  <span className={`w-2 h-2 rounded-full ${getLanguageColor(repo.language)}`}></span>
+                  <span className="text-xs text-gray-400">{repo.language}</span>
                 </div>
                 
-                <div className="flex items-center gap-4 text-sm text-gray-400">
+                <div className="flex items-center gap-4 text-xs text-gray-400">
                   <div className="flex items-center gap-1">
-                    <Star size={14} />
+                    <Star size={12} />
                     <span>{repo.stars}</span>
                   </div>
                   <div className="flex items-center gap-1">
-                    <GitFork size={14} />
+                    <GitFork size={12} />
                     <span>{repo.forks}</span>
                   </div>
                 </div>
@@ -123,9 +123,9 @@ const GitHubRepos = () => {
             href="https://github.com/yourusername"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 bg-gradient-to-r from-purple-600 to-pink-600 text-white px-8 py-4 rounded-full hover:scale-105 transition-transform duration-200 shadow-lg"
+            className="inline-flex items-center gap-2 bg-white text-black px-8 py-4 rounded-full hover:bg-gray-100 transition-all duration-200 text-sm font-medium"
           >
-            <Github size={20} />
+            <Github size={16} />
             View All Repositories
           </a>
         </div>

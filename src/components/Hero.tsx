@@ -3,32 +3,30 @@ import { ArrowDown } from "lucide-react";
 
 const Hero = () => {
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-r from-purple-800/20 to-blue-800/20"></div>
-      
-      <div className="container mx-auto px-6 text-center relative z-10">
+    <section id="home" className="min-h-screen flex items-center justify-center relative">
+      <div className="max-w-4xl mx-auto px-6 text-center">
         <div className="animate-fade-in">
-          <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
+          <h1 className="text-5xl md:text-7xl lg:text-8xl font-light text-white mb-8 leading-tight tracking-tight">
             Hello, I'm{" "}
-            <span className="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
+            <span className="font-medium">
               Your Name
             </span>
           </h1>
           
-          <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto">
+          <p className="text-lg md:text-xl text-gray-400 mb-12 max-w-2xl mx-auto font-light leading-relaxed">
             A passionate developer who loves building innovative solutions with modern technologies
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <a
               href="#about"
-              className="bg-gradient-to-r from-purple-600 to-pink-600 text-white px-8 py-4 rounded-full hover:scale-105 transition-transform duration-200 shadow-lg"
+              className="bg-white text-black px-8 py-4 rounded-full hover:bg-gray-100 transition-all duration-200 text-sm font-medium"
             >
               Learn More About Me
             </a>
             <a
               href="#projects"
-              className="border-2 border-purple-400 text-purple-400 px-8 py-4 rounded-full hover:bg-purple-400 hover:text-white transition-all duration-200"
+              className="border border-gray-600 text-white px-8 py-4 rounded-full hover:border-white transition-all duration-200 text-sm font-medium"
             >
               View My Work
             </a>
@@ -37,7 +35,7 @@ const Hero = () => {
       </div>
 
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-        <ArrowDown className="text-white/60" size={32} />
+        <ArrowDown className="text-gray-500" size={24} />
       </div>
     </section>
   );

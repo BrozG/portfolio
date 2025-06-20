@@ -3,6 +3,7 @@ import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Projects from "@/components/Projects";
 import GitHubRepos from "@/components/GitHubRepos";
+import Contacts from "@/components/Contacts";
 import Contact from "@/components/Contact";
 import Navigation from "@/components/Navigation";
 
@@ -14,6 +15,7 @@ const Index = () => {
       <About />
       <Projects />
       <GitHubRepos />
+      <Contacts />
       <Contact />
     </div>
   );

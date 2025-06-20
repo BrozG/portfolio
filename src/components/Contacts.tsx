@@ -1,41 +1,38 @@
-import { Mail, Download, Instagram } from "lucide-react";
 
-const Contact = () => {
+import { Mail, Phone, MapPin, Instagram } from "lucide-react";
+
+const Contacts = () => {
   return (
-    <section id="contact" className="py-24 px-6 relative bg-contact overflow-hidden">
+    <section id="contacts" className="py-24 px-6 relative bg-contacts overflow-hidden">
+      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-blue-900/20 to-blue-800/30"></div>
+      
       <div className="max-w-4xl mx-auto text-center relative z-10">
         <h2 className="text-4xl md:text-5xl font-light text-white mb-16 animate-fade-in-up">
-          Get In Touch
+          Contact Information
         </h2>
         
-        <div className="elegant-border p-12 glass-effect animate-fade-in-delay-1 mb-12">
-          <p className="text-lg text-gray-300 mb-8 leading-relaxed font-light max-w-2xl mx-auto">
-            I'm always interested in hearing about new opportunities and exciting projects. 
-            Whether you have a question or just want to say hi, feel free to reach out!
-          </p>
+        <div className="grid md:grid-cols-3 gap-8 mb-12">
+          <div className="elegant-border p-8 glass-effect animate-fade-in-delay-1 hover-lift">
+            <Mail className="mx-auto mb-4 text-blue-300" size={32} />
+            <h3 className="text-xl font-medium text-white mb-2">Email</h3>
+            <p className="text-gray-300 font-light">your.email@example.com</p>
+          </div>
           
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <a
-              href="mailto:your.email@example.com"
-              className="group bg-white/90 text-black px-8 py-4 rounded-full hover:bg-white transition-all duration-300 text-sm font-medium hover:scale-105 hover:shadow-xl backdrop-blur-sm flex items-center gap-2"
-            >
-              <Mail size={18} className="group-hover:rotate-12 transition-transform duration-300" />
-              <span className="group-hover:tracking-wide transition-all duration-300">Send Email</span>
-            </a>
-            
-            <a
-              href="/resume.pdf"
-              download
-              className="group border border-white/30 text-white px-8 py-4 rounded-full hover:border-white hover:bg-white/10 transition-all duration-300 text-sm font-medium hover:scale-105 backdrop-blur-sm flex items-center gap-2"
-            >
-              <Download size={18} className="group-hover:animate-bounce" />
-              <span className="group-hover:tracking-wide transition-all duration-300">Download Resume</span>
-            </a>
+          <div className="elegant-border p-8 glass-effect animate-fade-in-delay-2 hover-lift">
+            <Phone className="mx-auto mb-4 text-blue-300" size={32} />
+            <h3 className="text-xl font-medium text-white mb-2">Phone</h3>
+            <p className="text-gray-300 font-light">+1 (555) 123-4567</p>
+          </div>
+          
+          <div className="elegant-border p-8 glass-effect animate-fade-in-delay-3 hover-lift">
+            <MapPin className="mx-auto mb-4 text-blue-300" size={32} />
+            <h3 className="text-xl font-medium text-white mb-2">Location</h3>
+            <p className="text-gray-300 font-light">San Francisco, CA</p>
           </div>
         </div>
 
         <div className="elegant-border p-8 glass-effect animate-fade-in-delay-2">
-          <h3 className="text-xl font-medium text-white mb-6">Connect With Me</h3>
+          <h3 className="text-xl font-medium text-white mb-6">Follow Me</h3>
           <div className="flex justify-center gap-6">
             <a
               href="https://github.com/yourusername"
@@ -78,4 +75,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default Contacts;

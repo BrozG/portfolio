@@ -4,52 +4,40 @@ import { Github, Star, GitFork } from "lucide-react";
 const GitHubRepos = () => {
   const repos = [
     {
-      name: "awesome-ai-tools",
-      description: "A curated list of awesome AI tools and resources for developers",
+      name: "python_chatbot",
+      description: "A terminal-based chatbot using Python and JSON for query handling.",
+      language: "Python",
+      url: "https://github.com/BrozG/python_chatbot"
+    },
+    {
+      name: "Rss_news-Feed-with search filter",
+      description: "An RSS news feed viewer with built-in search and filter support.",
+      language: "Python",
+      url: "https://github.com/BrozG/Rss_news-Feed-with-search-filter"
+    },
+    {
+      name: "Sikkim_chatbot",
+      description: "AI-powered chatbot for Sikkim tourism queries using IBM Watson and LLaMA.",
+      language: "Python",
+      url: "https://github.com/BrozG/Sikkim_chatbot"
+    },
+    {
+      name: "Image_Generator",
+      description: "Custom AI wallpaper generator using Stable Diffusion and CUDA.",
+      language: "Python",
+      url: "https://github.com/BrozG/Image_Generator"
+    },
+    {
+      name: "Sussy-Bird-FlappyBird-",
+      description: "A Flappy Bird clone game built with Unity and C#.",
+      language: "ShaderLab",
+      url: "https://github.com/BrozG/SussyBird-FlappyBird-"
+    },
+    {
+      name: "gurumurti_website",
+      description: "Responsive business site for decorators built with React and Tailwind.",
       language: "TypeScript",
-      stars: 342,
-      forks: 67,
-      url: "https://github.com/yourusername/awesome-ai-tools"
-    },
-    {
-      name: "react-dashboard-kit",
-      description: "Modern React dashboard template with TypeScript and Tailwind CSS",
-      language: "React",
-      stars: 156,
-      forks: 34,
-      url: "https://github.com/yourusername/react-dashboard-kit"
-    },
-    {
-      name: "python-data-analyzer",
-      description: "Python toolkit for automated data analysis and visualization",
-      language: "Python",
-      stars: 89,
-      forks: 23,
-      url: "https://github.com/yourusername/python-data-analyzer"
-    },
-    {
-      name: "ml-model-deployment",
-      description: "Production-ready ML model deployment with Docker and FastAPI",
-      language: "Python",
-      stars: 234,
-      forks: 45,
-      url: "https://github.com/yourusername/ml-model-deployment"
-    },
-    {
-      name: "api-rate-limiter",
-      description: "Lightweight and configurable rate limiting middleware for APIs",
-      language: "Node.js",
-      stars: 78,
-      forks: 19,
-      url: "https://github.com/yourusername/api-rate-limiter"
-    },
-    {
-      name: "css-animation-library",
-      description: "Beautiful CSS animations and transitions for modern web apps",
-      language: "CSS",
-      stars: 145,
-      forks: 28,
-      url: "https://github.com/yourusername/css-animation-library"
+      url: "https://github.com/BrozG/gurumurti_website"
     }
   ];
 
@@ -105,18 +93,7 @@ const GitHubRepos = () => {
                 <div className="flex items-center gap-2">
                   <span className={`w-2 h-2 rounded-full ${getLanguageColor(repo.language)} group-hover:scale-125 transition-transform duration-300`}></span>
                   <span className="text-xs text-gray-400 group-hover:text-gray-300 transition-colors duration-300">{repo.language}</span>
-                </div>
-                
-                <div className="flex items-center gap-4 text-xs text-gray-400">
-                  <div className="flex items-center gap-1 group-hover:text-gray-300 transition-colors duration-300">
-                    <Star size={12} className="group-hover:scale-110 transition-transform duration-300" />
-                    <span>{repo.stars}</span>
-                  </div>
-                  <div className="flex items-center gap-1 group-hover:text-gray-300 transition-colors duration-300">
-                    <GitFork size={12} className="group-hover:scale-110 transition-transform duration-300" />
-                    <span>{repo.forks}</span>
-                  </div>
-                </div>
+                </div> 
               </div>
             </a>
           ))}
@@ -124,7 +101,7 @@ const GitHubRepos = () => {
 
         <div className="text-center mt-12 animate-fade-in-delay-3">
           <a
-            href="https://github.com/yourusername"
+            href="https://github.com/BrozG"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-white text-black px-8 py-4 rounded-full hover:bg-gray-100 transition-all duration-300 text-sm font-medium hover:scale-105 hover:shadow-lg group"

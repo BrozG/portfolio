@@ -15,19 +15,19 @@ const Contacts = () => {
           <div className="elegant-border p-8 glass-effect animate-fade-in-delay-1 hover-lift">
             <Mail className="mx-auto mb-4 text-blue-300" size={32} />
             <h3 className="text-xl font-medium text-white mb-2">Email</h3>
-            <p className="text-gray-300 font-light">your.email@example.com</p>
+            <p className="text-gray-300 font-light">brojengurung3@gmail.com</p>
           </div>
           
           <div className="elegant-border p-8 glass-effect animate-fade-in-delay-2 hover-lift">
             <Phone className="mx-auto mb-4 text-blue-300" size={32} />
             <h3 className="text-xl font-medium text-white mb-2">Phone</h3>
-            <p className="text-gray-300 font-light">+1 (555) 123-4567</p>
+            <p className="text-gray-300 font-light">+91 85091-80657</p>
           </div>
           
           <div className="elegant-border p-8 glass-effect animate-fade-in-delay-3 hover-lift">
             <MapPin className="mx-auto mb-4 text-blue-300" size={32} />
             <h3 className="text-xl font-medium text-white mb-2">Location</h3>
-            <p className="text-gray-300 font-light">San Francisco, CA</p>
+            <p className="text-gray-300 font-light">Gangtok, Sikkim, India</p>
           </div>
         </div>
 
@@ -35,7 +35,7 @@ const Contacts = () => {
           <h3 className="text-xl font-medium text-white mb-6">Follow Me</h3>
           <div className="flex justify-center gap-6">
             <a
-              href="https://github.com/yourusername"
+              href="https://github.com/BrozG"
               className="text-gray-400 hover:text-white transition-all duration-300 hover:scale-110 p-3 rounded-full hover:bg-white/10"
               target="_blank"
               rel="noopener noreferrer"
@@ -45,7 +45,7 @@ const Contacts = () => {
               </svg>
             </a>
             <a
-              href="https://linkedin.com/in/yourusername"
+              href="https://www.linkedin.com/in/brojen-gurung-8137b2250/"
               className="text-gray-400 hover:text-white transition-all duration-300 hover:scale-110 p-3 rounded-full hover:bg-white/10"
               target="_blank"
               rel="noopener noreferrer"
@@ -55,7 +55,7 @@ const Contacts = () => {
               </svg>
             </a>
             <a
-              href="https://instagram.com/yourusername"
+              href="https://instagram.com/broz.grg"
               className="text-gray-400 hover:text-white transition-all duration-300 hover:scale-110 p-3 rounded-full hover:bg-white/10"
               target="_blank"
               rel="noopener noreferrer"
@@ -63,7 +63,7 @@ const Contacts = () => {
               <Instagram size={24} />
             </a>
             <a
-              href="mailto:your.email@example.com"
+              href="mailto:brojengurung3@gmail.com"
               className="text-gray-400 hover:text-white transition-all duration-300 hover:scale-110 p-3 rounded-full hover:bg-white/10"
             >
               <Mail size={24} />

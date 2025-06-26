@@ -5,16 +5,24 @@ const Hero = () => {
   return (
     <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden bg-hero">
       <div className="max-w-4xl mx-auto px-6 text-center relative z-10">
-        <div className="space-y-8 elegant-border p-12 glass-effect">
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-light text-white leading-tight tracking-tight animate-fade-in-up">
-            Hello, I'm{" "}
-            <span className="font-medium bg-gradient-to-r from-white via-blue-200 to-blue-400 bg-clip-text text-transparent">
-              Your Name
-            </span>
-          </h1>
-          
+        <div className="flex flex-col md:flex-row items-center gap-10 elegant-border p-12 glass-effect">
+          {/* Profile Image */}
+          <img
+          src="broz.jpg" // <-- replace with your actual file name
+          className="w-56 h-56 rounded-full object-cover shadow-2xl border-4 border-white/30 ring-4 ring-blue-400/30 hover:scale-105 transition-transform duration-300"
+          />
+
+        {/* Text Section */}
+          <div className="text-center md:text-left space-y-8">
+            <h1 className="text-5xl md:text-6xl font-light text-white leading-tight tracking-tight animate-fade-in-up">
+              Hello, I'm{" "}
+              <span className="font-medium bg-gradient-to-r from-white via-blue-200 to-blue-400 bg-clip-text text-transparent">
+                 Brojen
+              </span>
+            </h1>
+
           <p className="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto font-light leading-relaxed animate-fade-in-delay-1">
-            A passionate developer who loves building innovative solutions with modern technologies
+            I'm a developer focused on building practical AI tools and modern web applications that solve real-world problems.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-in-delay-2">
@@ -32,6 +40,7 @@ const Hero = () => {
             </a>
           </div>
         </div>
+      </div>
       </div>
 
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-float">

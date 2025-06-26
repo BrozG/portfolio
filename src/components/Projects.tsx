@@ -4,27 +4,27 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: "AI Chat Application",
-      description: "A modern chat application powered by LLaMA with real-time messaging and intelligent responses.",
-      stack: ["React", "TypeScript", "LLaMA", "Node.js"],
-      github: "https://github.com/yourusername/ai-chat",
-      image: "https://images.unsplash.com/photo-1587560699334-cc4ff634909a?w=400&h=250&fit=crop"
+      title: "SussyBird_Game",
+      description: "A playful Flappy Bird-inspired game built with Unity and C#. It features smooth animations, basic physics, and a scoring system. This project was my entry point into game development, helping me understand game loops, collisions, and UI design in Unity.",
+      stack: ["Unity", "C#", "2D Physics"],
+      github: "https://github.com/BrozG/SussyBird-FlappyBird-",
+      image: "SussyBird.jpeg"
     },
     {
       id: 2,
-      title: "Data Visualization Dashboard",
-      description: "An interactive dashboard for visualizing complex datasets with intuitive charts and graphs.",
-      stack: ["React", "D3.js", "Python", "Flask"],
-      github: "https://github.com/yourusername/data-dashboard",
-      image: "https://images.unsplash.com/photo-1517694712202-14f926bb67ee?w=400&h=250&fit=crop"
+      title: "Image_Generator",
+      description: "A creative image generation tool built using Stable Diffusion and local GPU (RTX 3050). It allows users to generate custom wallpapers based on text prompts. I implemented fine-tuned prompting, facial personalization (in progress), and deployed it as a local prototype — the first step toward building visual AI agents.",
+      stack: ["Python", "Stable Diffusion", "CUDA"],
+      github: "https://github.com/BrozG/Image_Generator",
+      image: "generated_wallpaper.png"
     },
     {
       id: 3,
-      title: "E-commerce Platform",
-      description: "A fully functional e-commerce platform with user authentication, product management, and secure payments.",
-      stack: ["React", "Node.js", "MongoDB", "Stripe"],
-      github: "https://github.com/yourusername/ecommerce-platform",
-      image: "https://images.unsplash.com/photo-1523381294911-8cd69eb14aa3?w=400&h=250&fit=crop"
+      title: "Gurumurti Decorators – Client Portfolio Website",
+      description: "Designed and developed a fully responsive business website for a local event and decor service provider. The site highlights services, gallery, testimonials, and includes a client message form. Built with React, TypeScript, and Tailwind CSS, and deployed on Vercel with a custom domain.",
+      stack: ["React", "TypeScript", "Tailwind CSS", "Vite", "Vercel"],
+      github: "https://github.com/BrozG/gurumurti_website",
+      image: "website.png"
     },
   ];
 

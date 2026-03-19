@@ -1,8 +1,12 @@
-
 const About = () => {
   const skills = [
-    "Large Language Models (LLMs)","Generative AI (Diffusion, NLP)","React","Tailwind CSS",
-    "Python"," JavaScript", "Streamlit","Flask","Git","Vercel","Edge AI","Firebase" ];
+    "Python", "TypeScript", "JavaScript (ES6+)", "C++", "SQL",
+    "React", "Next.js", "Tailwind CSS", "Node.js", "Flask",
+    "LangChain", "RAG Pipelines", "LoRA Fine-tuning", "Phi-2 LLM",
+    "HuggingFace Transformers", "Stable Diffusion", "PyTorch", "TensorFlow",
+    "FAISS / ChromaDB", "MySQL", "PostgreSQL", "MongoDB", "Firebase",
+    "Docker", "Git", "Vercel", "AWS (EC2/S3)"
+  ];
 
   return (
     <section id="about" className="py-24 px-6 relative bg-about">
@@ -10,20 +14,19 @@ const About = () => {
         <h2 className="text-4xl md:text-5xl font-light text-white mb-16 text-center animate-fade-in-up">
           About Me
         </h2>
-        
+
         <div className="flex flex-col gap-16 items-start mb-16">
           <div className="space-y-6 animate-slide-in-left elegant-border p-8 glass-effect">
             <p className="text-gray-300 leading-relaxed font-light">
-              Hi,
-              I'm a developer who enjoys turning ideas into working systems — whether it's an AI-powered assistant, a personalized image generator, or a full-fledged website for a real client. My interests lie at the intersection of large language models (LLMs), generative AI, and user-focused web development. I don’t just follow tutorials — I learn best by building, breaking, and fixing things until they actually work.
+              I'm Brojen Gurung — a final-year B.Tech IT student from Gangtok, Sikkim, working at the intersection of AI/ML engineering and full-stack development. I build systems that are not just functional, but production-ready — from a real client website with a Cloudinary-powered admin panel to a scalable B2B AI platform achieving 100% domain classification accuracy using LoRA fine-tuned language models.
             </p>
-            
-            <p className="text-gray-300 leading-relaxed font-light">
-            </p>
-              Over time, I’ve explored everything from local model deployment with limited GPU power to integrating AI agents and automation into practical use cases. I’m especially drawn to projects where intelligence meets design — where a chatbot can answer with context or a web app can feel genuinely helpful. I enjoy the challenge of figuring things out with the tools I have, even if that sometimes means wrestling with a few errors at 2 a.m.
 
             <p className="text-gray-300 leading-relaxed font-light">
-              Outside of code, you’ll find me learning new tools, staying updated with AI trends, or pushing myself outdoors — whether it’s a workout, a hike, or just unplugging to reset. I believe staying active sharpens not just the body, but the mind too. That balance keeps me curious, creative, and ready to take on new challenges — both in tech and in life.
+              My current focus is <span className="text-white font-medium">NexusAI</span> — a scalable customer support AI system powered by Phi-2 with domain-specific LoRA adapters for Telecom, E-commerce, and Education. I designed the full architecture including the RAG pipeline, vector stores, and training pipeline — achieving up to 257% quality improvement over the base model. I'm also building <span className="text-white font-medium">Trading Seeko</span>, a crypto paper trading app with built-in lessons for beginners.
+            </p>
+
+            <p className="text-gray-300 leading-relaxed font-light">
+              I don't just follow tutorials — I learn by building real things, breaking them, and figuring out why. Whether it's fine-tuning an LLM on limited GPU, deploying a RAG pipeline on real government PDFs, or shipping a live website for a client — I care about outcomes, not just code. Outside of tech, I stay sharp through basketball, gym, and the occasional hike through the hills of Sikkim.
             </p>
           </div>
 
@@ -32,20 +35,19 @@ const About = () => {
             <ul className="space-y-4 text-gray-300">
               <li className="flex items-center font-light hover:text-white transition-colors duration-300">
                 <span className="w-2 h-2 bg-blue-400 rounded-full mr-4 animate-pulse"></span>
-                Smart, AI-powered web apps
+                Scalable AI systems — RAG pipelines, LoRA fine-tuning, LLM integrations
               </li>
               <li className="flex items-center font-light hover:text-white transition-colors duration-300">
                 <span className="w-2 h-2 bg-blue-400 rounded-full mr-4 animate-pulse"></span>
-                TinyML projects for edge devices
+                Full-stack web applications with real users and real impact
               </li>
               <li className="flex items-center font-light hover:text-white transition-colors duration-300">
                 <span className="w-2 h-2 bg-blue-400 rounded-full mr-4 animate-pulse"></span>
-                Clean, responsive user interfaces
+                Clean, responsive UIs that feel fast and intentional
               </li>
               <li className="flex items-center font-light hover:text-white transition-colors duration-300">
                 <span className="w-2 h-2 bg-blue-400 rounded-full mr-4 animate-pulse"></span>
-                Scalable APIs and backend systems
-
+                Backend APIs and data pipelines that handle real-world load
               </li>
             </ul>
           </div>

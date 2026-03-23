@@ -24,7 +24,7 @@ const Contact = () => {
             </a>
 
             <a
-              href="public/Brojen_Gurung_Resume.pdf"
+              href="/Brojen_Gurung_Resume.pdf"
               download
               className="group border border-white/30 text-white px-8 py-4 rounded-full hover:border-white hover:bg-white/10 transition-all duration-300 text-sm font-medium hover:scale-105 backdrop-blur-sm flex items-center gap-2"
             >
